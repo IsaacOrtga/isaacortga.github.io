@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Isaac Ortega Dev</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="./css/aboutme.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsive/aboutmeRes.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="title">
+            <h1><a href="index.html">Isaac Ortega</a></h1>
+            <h3><a href="index.html">Fullstack Developer</a></h3>
+            <div class="logo">
+                <h2>
+                    <<span>web</span>>
+                </h2>
+            </div>
+        </div>
+
+        <div id="menu" class="nav">
+            <ul id="navList">
+                <li><a class="link-item" href='contacto.html'>Contacto</a></li>
+                <li><a class="link-item" href='aboutme.html'>Curriculum Vitae</a></li>
+                <li><a class="link-item" href='proyectos.html'>Proyectos</a></li>
+                <li><a class="link-item" href='index.html'>Inicio</a></li>
+            </ul> 
+        </div>
+        <button id="button-menu" class="button-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    
+
+    <div class="generalContainer">
+        <a href="./img/isaac_ortega_cv.pdf" download="Curriculum_vitae_Isaac"><button class="cvButton">Descargar CV</button></a>
+        <h2 class="skillsTitle">Acumulando habilidades</h2>
+        <img class="wayPic" src="./img/wayRoad.jpg" />
+        <div class="textContainer">
+            <p>Desde los 17 años tuve mi primer trabajo, y desde entonces he aprendido el valor del esfuerzo y sus <br>
+                frutos. Tras compatibilizar estudios con trabajo y terminar la carrera de Filosofía, decidí seguir por 
+                el <br> camino de la investigación y hacer dos máster: Investigación en Filosofía (ULL) y Psicoanálisis y
+                teoría <br> de la cultura (UCM). <br><br>Mientras seguía trabajando e investigando para una futura tesis,
+                encontré estabilidad en El Corte Inglés <br> como vendedor en el departamento de electrónica. Ahí aprendí a
+                trabajar en una gran empresa, donde<br>aprendí a coordinar con varios de partamentos para envíos y postventa, así como
+                con fabricantes y <br> proveedores. El trabajo en equipo era un pilar fundamental en el día a día, la
+                cohesión y el apoyo mutuo, <br> así como la capacidad de <span>comunicar y empatizar</span> con el cliente. <br><br>Sin
+                embargo, debido a la naturaleza del departamento uno de los mayores aprendizajes fue en cuanto a
+                gestionar problemas con envíos o ventas finalizadas, así como a gestionar la frustración cuando una
+                incidencia no se resolvía el primer o segundo día. <br><br>Más adelante descubrí la <span>programación</span> por
+                medio de un amigo, lo estuve estudiando por mi cuenta, iniciándome en HTML Y CSS, así como en
+                JavaScript. Fue una sorpresa para mi cuando me di cuenta de que era un mundo apasionante en el que me
+                encantaría desarrollarme personal y profesionalmente. Por ello, tomé la decisión de acelerar este
+                aprendizaje por medio de un <span>Bootcamp</span>, por lo que decidí matricularme en <span>The Bridge</span>, uno de los bootcamp
+                más famosos y prestigiosos de España. Una vez finalizados los estudios el aprendizaje no para, y cada
+                día me encuentro frente al Visual Studio escribiendo código, aprendiendo de mis errores y haciendo cada
+                vez más migas con mi nuevo <span>compañero de trabajo: Google.</span></p>
+        </div>
+    </div>
+
+
+
+    <div class="footer" id="footer">
+
+
+
+        <h4 id="textTools">Desarrollado con:</h4>
+        <img id="htmlFooter" src="./img/htmlLogo.png" />
+        <img id="cssFooter" src="./img/cssLogo.png" />
+
+        <img id="gifDev" src="./img/gifDev.gif">
+
+        <div class="contactFooter">
+            <h4>Contacta:</h4>
+            <div id="textContact">
+            <p>Calle Luna, Madrid 28004</p>
+            <a href="tel:+34626138756"><p>Móvil: +34 626 138 756</p></a>
+            <a href="mailto:ortga.isaac@gmail.com"><p>Email: ortga.isaac@gmail.com</p></a>
+        </div>
+            
+
+        </div>
+    </div>
+
+    <script>
+        //  seleccionamos los dos elementos que serán clickables
+    
+    const toggleButton = document.getElementById("button-menu");
+    const navWrapper = document.getElementById("menu");
+    
+    /* 
+      cada ves que se haga click en el botón 
+      agrega y quita las clases necesarias 
+      para que el menú se muestre.
+    */
+    toggleButton.addEventListener("click", () => {
+      toggleButton.classList.toggle("close");
+      navWrapper.classList.toggle("show");
+    });
+    
+    /* 
+      Cuándo se haga click fuera del contenedor de enlaces 
+      el menú debe esconderse.
+    */
+    
+    navWrapper.addEventListener("click", e => {
+      if (e.target.id === "menu") {
+        navWrapper.classList.remove("show");
+        toggleButton.classList.remove("close");
+      }
+    });
+    </script>
+</body>
+
+</html>

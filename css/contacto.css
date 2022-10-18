@@ -1,0 +1,459 @@
+/* FUENTES */
+
+@font-face {
+    font-family: "WebSymbolsRegular";
+    src: url('../fonts/websymbols-regular-webfont.eot');
+    src: url('../fonts/websymbols-regular-webfont.eot?#iefix') format('embedded'),
+        url('../fonts/websymbols-regular-webfont.woff') format('woff'),
+        url('../fonts/websymbols-regular-webfont.ttf') format('truetype'),
+        url('../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-style: normal;
+    font-weight: normal;
+
+}
+
+@font-face {
+    font-family: "SearsTower";
+    src: url('../fonts/searsTower.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* ESTILOS GENERALES */
+
+
+*{
+    
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    margin: 0px;
+    padding: 0px;
+  
+}
+
+
+/* NAVBAR */
+
+#navbar {
+    background-color: white;;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 10px;
+    width: 100%; 
+    
+}
+
+
+#title {
+    animation: fromAbove 300ms linear;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    margin: 0rem 0rem 0rem 10rem;
+    transition: 300ms;
+    padding: 6px;
+    width: 12rem;
+}
+
+#title:hover {
+    transform: scale(1.2, 1.2);
+    
+}
+
+#title h1, h3, a{
+    color: black;
+    text-decoration: none;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+.logo> h2{
+    color: #5babcd;
+    font-family: 'WebSymbolsRegular';
+    font-size: 25px;
+    float: right;
+    
+    
+}
+
+.logo>h2>span {
+    color: rgb(40, 39, 39);
+    font-family: 'SearsTower';
+    
+}
+
+
+#navList {
+   
+    margin-right: 10rem;
+    
+}
+
+#navList>li {
+    animation: fromAbove 300ms linear;
+    color: black;
+    display: block;
+    float: right;
+    font-size: 20px;
+    margin: 2rem 3rem 0rem 0rem;
+    text-decoration: none;
+}
+
+#navList>li>a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    transition: all 500ms;
+
+}
+
+#menu ul li a:hover {
+    color: #5babcd;
+    transform: scale(1.2, 1.2);
+}
+
+@keyframes fromAbove {
+    from {
+        transform: translateY(-150%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+
+}
+
+/* CUERPO */
+
+.contactContainer{
+    background: #f4eeee;
+    height: 35rem;
+    margin: 10rem 10rem 0rem 10rem;
+    padding: 1rem;
+    
+}
+
+.contact{
+    animation: blink 6s infinite linear;
+    border: 15px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    float: left;
+    height: 10rem;
+    margin: 3rem 0rem 0rem 3rem;
+    width: 10rem;
+}
+
+.contact > h3{
+    color: rgb(244, 238, 238);
+    font-size: 25px;
+    margin: 3.5rem 0rem 0rem 1.5rem;
+}
+
+@keyframes blink{
+    0%{
+        background: #5babcd;
+    }
+    45%{
+        background: #cd7f5b;
+    }
+    75%{
+        background: #5babcd;
+    }
+    100%{
+        background: #cd7f5b;
+    }
+}
+
+
+ .logoContainer{
+    display: none;
+    animation: fromLeft 750ms linear;
+} 
+
+@keyframes fromLeft {
+    from {
+        transform: translateX(-30%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+
+}
+
+.linkedin{
+  
+    float: left;
+    height: 12rem;
+    width: 15rem;
+    margin: 0.2rem 0rem 0rem 4rem;
+}
+
+
+.linkedinLogo{
+    
+    color: #0a66c2;
+    float: left;
+    font-family: 'WebSymbolsRegular';
+    font-size: 7rem;
+    height: 6rem;
+    margin: 2rem 0rem 0rem 5rem;
+    width: 5rem;
+}
+
+.linkedin .textContact{
+    
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-left: 2.5rem;
+    margin-top: 0rem;
+    position: absolute;
+    opacity: 0;
+    padding: 5px;
+    text-shadow: 0px 0px 1px #ccc;
+    transform: translateY(80%);
+    transition: all 400ms;  
+}
+
+.linkedin:hover .textContact{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.github{
+    cursor: pointer;
+    height: 12rem;
+    width: 12rem;
+    margin: 2.5rem 0rem 0rem 37rem;
+}
+
+.githubLogo {
+    border-radius: 5px;;
+    float: left;
+    height: 7rem;
+    margin: 3.2rem 0rem 0rem 2rem;
+    width: 7rem;
+}
+
+.github .textContact{
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    position: absolute;
+    opacity: 0;
+    padding: 5px;
+    text-shadow: 0px 0px 1px #ccc;
+    transform: translateY(80%);
+    transition: all 400ms;  
+}
+
+.github:hover .textContact{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.gmail{
+    cursor: pointer;
+    height: 12rem;
+    width: 12rem;
+    margin: -12rem 0rem 0rem 52rem;
+}
+
+.gmailLogo {
+    border-radius: 5px;;
+    float: left;
+    height: 8.5rem;
+    margin: 2.5rem 0rem 0rem 2rem;
+    width: 7.5rem;
+}
+
+.gmail .textContact{    
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    position: absolute;
+    opacity: 0;
+    padding: 5px;
+    text-shadow: 0px 0px 1px #ccc;
+    transform: translateY(80%);
+    transition: all 400ms;  
+}
+
+
+.gmail:hover .textContact{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+
+.phone{
+    cursor: pointer;
+    height: 12rem;
+    width: 12rem;
+    margin: 3rem 0rem 0rem 30rem;
+}
+
+.phoneIcon{
+    border-radius: 5px;;
+    float: left;
+    height: 8rem;
+    margin: 2.5rem 0rem 0rem 2rem;
+    width: 7.5rem;
+}
+
+.phone .textContact{    
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-left: 3rem;
+    margin-top: 0.2rem;
+    position: absolute;
+    opacity: 0;
+    padding: 5px;
+    text-shadow: 0px 0px 1px #ccc;
+    transform: translateY(80%);
+    transition: all 400ms;  
+}
+
+.phone:hover .textContact{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.whatsapp{
+    cursor: pointer;
+    height: 12rem;
+    width: 12rem;
+    margin: -12rem 0rem 0rem 46rem;
+}
+
+.whatsappIcon{
+    border-radius: 8px;;
+    float: left;
+    height: 7.8rem;
+    margin: 2.8rem 0rem 0rem 2rem;
+    width: 7.5rem;
+}
+
+.whatsapp .textContact{    
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-left: 2.7rem;
+    margin-top: 0.2rem;
+    position: absolute;
+    opacity: 0;
+    padding: 5px;
+    text-shadow: 0px 0px 1px #ccc;
+    transform: translateY(80%);
+    transition: all 400ms;  
+}
+
+.whatsapp:hover .textContact{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.linkedin, .phone{
+    animation: fromLeft 1s linear;
+}
+
+.github, .whatsapp{
+    animation: fromLeft 1.5s linear;
+}
+
+.gmail{
+   animation: fromLeft 2s linear;
+}
+
+
+
+/* TEXTO CONTACTO */
+
+.adressContainer{
+    border: 1px solid black;
+    height: 20rem;
+    float: right;
+    margin: 20rem 0rem 0rem 4rem;
+    width: 30rem;
+}
+
+
+/* FOOTER */
+
+#footer{
+    align-self: flex-end;
+    margin: 0rem 0rem -20rem -3rem;
+    bottom: 0rem;
+    color: black;
+	height: 12rem;
+    overflow: hidden;
+    position: absolute;
+    width: 110%;
+}
+
+
+#textTools{
+   float: left;
+   position: absolute;
+   margin: 1rem 0rem 0rem 6rem;
+}
+
+#htmlFooter{
+    float: left;
+    height: 6rem;
+    margin: 4rem 0rem 0rem 3rem;
+    
+}
+
+#cssFooter{
+    float: left;
+    height: 6rem;
+    margin: 4rem 0rem 0rem 3rem;
+   
+   
+}
+
+.contactFooter{
+    
+    float: right;
+    position: absolute;
+    height: 10rem;
+    margin: 2rem 0rem 0rem 53rem;
+    width: 26rem;
+}
+
+.contactFooter > h4{
+    float: right;
+    margin: 0rem 7rem 0rem 0rem;
+}
+
+#textContact{
+    float: right;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    margin: 1rem 1rem 0rem 0rem;
+    
+
+}
+
+#gifDev{
+    height: 12rem;
+    float: left;
+    margin: 0rem 0rem 0rem 12rem;
+
+}

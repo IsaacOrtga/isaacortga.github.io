@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Isaac Ortega dev</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="./css/contacto.css" />
+    <link rel="stylesheet" type="text/css" href="./css/responsive/contactoRes.css"/>
+
+</head>
+<body>
+
+   
+    <div id="navbar">
+        <div id="title">
+            <h1><a href="index.html">Isaac Ortega</a></h1>
+            <h3><a href="index.html">Fullstack Developer</a></h3>
+            <div class="logo">
+                <h2>
+                    <<span>web</span>>
+                </h2>
+            </div>
+        </div>
+
+        <div id="menu" class="nav">
+            <ul id="navList">
+                <li><a class="link-item" href='contacto.html'>Contacto</a></li>
+                <li><a class="link-item" href='aboutme.html'>Curriculum Vitae</a></li>
+                <li><a class="link-item" href='proyectos.html'>Proyectos</a></li>
+                <li><a class="link-item" href='index.html'>Inicio</a></li>
+            </ul> 
+        </div>
+        <button id="button-menu" class="button-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div class="contactContainer">
+        <div class="contact" onclick="viewContact()">
+            <h3>Contacta</h3>
+        </div>
+        <div class="logoContainer">
+        <div class="linkedin">
+            <h3 class="textContact"><a href="#">Contáctame en Linkedin</a></h3>
+            <a class="linkedinLogo" target="_blank" href="https://es.linkedin.com/in/isaac-ortega-acosta">l</a>
+        </div>
+        <div class="github">
+            <h3 class="textContact"><a href="#">Visita mi código</a></h3>
+            <a target="_blank" href="https://github.com/IsaacOrtga"><img class="githubLogo" src="./img/gitSocial.png"></img></a>
+        </div>
+        <div class="gmail">
+            <h3 class="textContact">Contáctame en gmail</h3>
+            <a href="mailto:ortga.isaac@gmail.com"><img class="gmailLogo" src="./img/gmailLogo.png" href="#"></img></a>
+        </div>
+
+        <div class="phone">
+            <h3 class="textContact">Llámame</h3>
+            <a href="tel:+34626138756"><img class="phoneIcon" src="./img/phoneIcon.jpg"></a>
+        </div>
+        <div class="whatsapp">
+            <h3 class="textContact">Escríbeme</h3>
+            <a target="_blank" href="https://wa.me/34626138756"><img class="whatsappIcon" src="./img/whatsappIcon.png"></a>
+
+        </div>
+    </div>
+
+    <div id="footer">
+
+
+
+        <h4 id="textTools">Desarrollado con:</h4>
+        <img id="htmlFooter" src="./img/htmlLogo.png" />
+        <img id="cssFooter" src="./img/cssLogo.png" />
+
+        <img id="gifDev" src="./img/gifDev.gif">
+
+        <div class="contactFooter">
+            <h4>Contacta:</h4>
+            <div id="textContact">
+            <p>Calle Luna, Madrid 28004</p>
+            <a href="tel:+34626138756"><p>Móvil: +34 626 138 756</p></a>
+            <a href="mailto:ortga.isaac@gmail.com"><p>Email: ortga.isaac@gmail.com</p></a>
+        </div>
+            
+
+        </div>
+    </div>
+
+    
+
+    <script>
+        
+    
+    //  seleccionamos los dos elementos que serán clickables
+
+const toggleButton = document.getElementById("button-menu");
+const navWrapper = document.getElementById("menu");
+
+/* 
+  cada ves que se haga click en el botón 
+  agrega y quita las clases necesarias 
+  para que el menú se muestre.
+*/
+toggleButton.addEventListener("click", () => {
+  toggleButton.classList.toggle("close");
+  navWrapper.classList.toggle("show");
+});
+
+/* 
+  Cuándo se haga click fuera del contenedor de enlaces 
+  el menú debe esconderse.
+*/
+
+navWrapper.addEventListener("click", e => {
+  if (e.target.id === "menu") {
+    navWrapper.classList.remove("show");
+    toggleButton.classList.remove("close");
+  }
+});
+
+
+
+
+
+        // Función para aparecer formas de contacto
+        let contactView = document.getElementsByClassName("logoContainer");
+        function viewContact() {
+            
+            
+            Array.from(contactView).forEach((x) => {
+        if( x.style.display === "none"){
+            x.style.display ="block";
+        }else{
+            x.style.display = "none"
+        }
+    })
+    }
+
+    </script>
+  
+</body>
+</html>

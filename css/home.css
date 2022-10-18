@@ -1,0 +1,389 @@
+/* FUENTES */
+
+@font-face {
+    font-family: "WebSymbolsRegular";
+    src: url('../fonts/websymbols-regular-webfont.eot');
+    src: url('../fonts/websymbols-regular-webfont.eot?#iefix') format('embedded'),
+        url('../fonts/websymbols-regular-webfont.woff') format('woff'),
+        url('../fonts/websymbols-regular-webfont.ttf') format('truetype'),
+        url('../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-style: normal;
+    font-weight: normal;
+
+}
+
+@font-face {
+    font-family: "SearsTower";
+    src: url('../fonts/searsTower.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* ESTILOS GENERALES */
+
+* {
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* NAVBAR */
+
+#navbar {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 110px;
+    width: 100%; 
+}
+
+
+#title {
+    animation: fromAbove 300ms linear;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    margin: 1rem 0rem 0rem 10rem;
+    transition: 300ms;
+    padding: 6px;
+    width: 210px;
+}
+
+#title:hover {
+    transform: scale(1.2, 1.2);
+    
+}
+
+#title h1, h3, a{
+    color: black;
+    text-decoration: none;
+}
+
+.logo> h2{
+    color: #5babcd;
+    font-family: 'WebSymbolsRegular';
+    font-size: 25px;
+    float: right;
+    
+}
+
+.logo>h2>span {
+    color: rgb(40, 39, 39);
+    font-family: 'SearsTower';
+    
+}
+
+
+#navList {
+   
+    margin-right: 10rem;
+    
+}
+
+#navList>li {
+    animation: fromAbove 300ms linear;
+    color: black;
+    display: block;
+    float: right;
+    font-size: 20px;
+    margin: 2rem 3rem 0rem 0rem;
+    text-decoration: none;
+}
+
+#navList>li>a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    transition: all 500ms;
+
+}
+
+#menu ul li a:hover {
+    color: #5babcd;
+    transform: scale(1.2, 1.2);
+}
+
+@keyframes fromAbove {
+    from {
+        transform: translateY(-150%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+
+}
+
+
+/* LENGUAJES LOGOS*/
+
+.generalContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+
+#langContainer{
+    display: flex;
+    height: 12rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+  
+}
+
+
+
+#langContainer  img {
+    height: 10rem;
+    width: 15rem;
+    padding: 6px;
+    scroll-snap-align: center;
+}
+
+
+
+/* TARJETAS */
+
+#body{
+    flex-direction: row;
+    background: rgb(244, 238, 238);
+    float: left;
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    width: 60%; 
+    height: 63rem;
+}
+
+.cards{
+    height: 20rem;
+    margin: 5rem 32rem 0rem 10rem;
+    padding: 10px;
+}
+
+.textCards{
+    
+    float: left;
+    text-align: justify;
+    margin-left: 10rem;
+    margin-top: 10px; 
+    position: absolute;
+    width: 32.5rem;
+}
+
+.textCards > h3 {
+    padding: 6px;
+}
+
+.textCards > p > span{
+    color: #cd7d5b;
+}
+
+.textCards > p > span > a {
+    color: #cd7d5b;
+    text-decoration: none;
+}
+
+.photoCards{
+    
+    border-radius: 10px;
+    height: 15rem;
+    float: left;
+    margin-left: -8rem;
+    margin-top: 3rem;
+    width: 17rem;
+}
+
+#philoImg{
+    background-color: rgb(91, 171, 205);
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    margin-top: 2rem;
+}
+
+#philoImg > p {
+    text-align: center;
+    padding: 60px;
+}
+
+
+
+/* LATERAL */
+
+.lateralContainer{
+    display: flex;
+    margin: 0rem 0rem 0rem 68rem;
+    float: right;
+    flex-direction: column;
+}
+
+#lateral{
+    background: rgb(244, 238, 238);
+    display: flex;
+    flex-direction: column;
+    
+    float: right;
+     margin-right: 12rem;
+    margin-top: 5rem;  
+    width: 57%;
+    height: 21rem; 
+}
+
+#lateral > h3{
+    margin: 0px auto;
+    padding: 5px;
+}
+.social{
+    float: left;
+    margin-left: 1rem;
+    cursor: pointer;
+    padding: px;
+}
+
+.social:hover{
+ box-shadow: 5px 5px 5px gray;
+
+}
+#lateral .overlay{
+    display: block;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 8rem;
+    margin-top: 2rem;
+    position: absolute;
+    opacity: 0;
+    padding: 5px;
+    text-shadow: 0px 0px 1px #ccc;
+    transform: translateX(-80%);
+    transition: all 400ms;  
+}
+
+#lateral:hover .overlay{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+#linkedin{
+    color: #0a66c2;
+    font-family: 'WebSymbolsRegular';
+    font-size: 5rem;
+    height: 6rem;
+    width: 5rem;
+}
+
+#git{
+    height: 5.1rem;
+    width: 5rem;
+}
+
+#gmail{
+    height: 5.1rem;
+    width: 5rem;
+}
+
+
+#lateral2{
+    background: rgb(244, 238, 238);
+    flex-direction: column;
+    float: right; 
+    margin-right: -15.2rem;
+    margin-top: 2rem; 
+    width: 57%;
+    height: 40rem; 
+}
+
+
+
+.fotoHome{
+    border-radius: 5px;
+    box-shadow: 0px 7px 8px 4px gray;
+    height: 10rem;
+    margin: 0.5rem 0rem 1.5rem 1rem;
+    width: 13.5rem;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#lateral2 > h5{
+    float: left;
+    margin-left: 4.5rem;
+    padding: 10px;
+}
+
+#lateral2 > p {
+    float: left;
+    text-align: justify;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+/* FOOTER */
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0rem 0rem 0rem;
+    bottom: 0rem;
+    color: black;
+	height: 12rem;
+    overflow: hidden;
+	position: relative;
+    width: 100%;
+}
+
+
+#textTools{
+   float: left;
+   position: absolute;
+   margin: 1rem 0rem 0rem 13rem;
+}
+
+#htmlFooter{
+    float: left;
+    height: 6rem;
+    margin: 4rem 0rem 0rem 10rem;
+    
+}
+
+#cssFooter{
+    float: left;
+    height: 6rem;
+    margin: 4rem 0rem 0rem 3rem;
+
+}
+
+.contactFooter{
+    float: right;
+    height: 10rem;
+    margin: 2rem 0rem 0rem 8rem;
+    width: 26rem;
+}
+
+.contactFooter > h4{
+    float: right;
+    margin: 0rem 13rem 0rem 0rem;
+}
+
+#textContact{
+    float: right;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    margin: 1rem 6rem 0rem 0rem;
+    
+
+}
+
+#gifDev{
+    height: 12rem;
+    float: left;
+    margin: 0rem 0rem 0rem 12rem;
+
+}

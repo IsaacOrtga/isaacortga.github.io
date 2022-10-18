@@ -1,0 +1,357 @@
+/* FUENTES */
+
+@font-face {
+    font-family: "WebSymbolsRegular";
+    src: url('../fonts/websymbols-regular-webfont.eot');
+    src: url('../fonts/websymbols-regular-webfont.eot?#iefix') format('embedded'),
+        url('../fonts/websymbols-regular-webfont.woff') format('woff'),
+        url('../fonts/websymbols-regular-webfont.ttf') format('truetype'),
+        url('../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-style: normal;
+    font-weight: normal;
+
+}
+
+@font-face {
+    font-family: "SearsTower";
+    src: url('../fonts/searsTower.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* ESTILOS GENERALES */
+
+
+*{
+    
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    margin: 0px;
+    padding: 0px;
+  
+}
+
+
+/* NAVBAR */
+
+#navbar {
+    background-color: white;;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 10px;
+    width: 100%; 
+    
+}
+
+
+#title {
+    animation: fromAbove 300ms linear;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    margin: 0rem 0rem 0rem 10rem;
+    transition: 300ms;
+    padding: 6px;
+    width: 12rem;
+}
+
+#title:hover {
+    transform: scale(1.2, 1.2);
+    
+}
+
+#title h1, h3, a{
+  color: black;
+  text-decoration: none;
+}
+
+#title h1, h3, .linkTitle{
+    color: black;
+    text-decoration: none;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+.logo> h2{
+    color: #5babcd;
+    font-family: 'WebSymbolsRegular';
+    font-size: 25px;
+    float: right;
+    
+    
+}
+
+.logo>h2>span {
+    color: rgb(40, 39, 39);
+    font-family: 'SearsTower';
+    
+}
+
+
+#navList {
+   
+    margin-right: 10rem;
+    
+}
+
+#navList>li {
+    animation: fromAbove 300ms linear;
+    color: black;
+    display: block;
+    float: right;
+    font-size: 20px;
+    margin: 2rem 3rem 0rem 0rem;
+    text-decoration: none;
+}
+
+#navList>li>a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    transition: all 500ms;
+
+}
+
+#menu ul li a:hover {
+    color: #5babcd;
+    transform: scale(1.2, 1.2);
+}
+
+@keyframes fromAbove {
+    from {
+        transform: translateY(-150%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+
+}
+
+
+/* CUERPO */
+
+
+
+
+.body{
+    background: #f4eeee;
+    height: 100%;
+    margin: 10rem 10rem 3rem 10rem;
+ 
+}
+
+
+
+
+
+
+/* Bordes sombreados */
+
+
+.shadow {
+  position: relative;
+  width:100%;
+  height:3px;
+  margin: 10px 0 -22px 0;
+  -webkit-box-shadow: 0px 0px 50px 3px rgba(1, 1, 1, 0.6);
+  box-shadow: 0px 0px 50px 3px rgba(1, 1, 1, 0.6);
+  border-radius: 50%;
+
+}
+
+/* Fin de bordeados */
+
+.h1Container{
+    position: relative;
+    margin: 5% 0% 0% 25%;
+    top: 2rem;
+    width: 100%;
+}
+
+.titleP{
+  margin: 6% 0% 0% 5%;
+  
+}
+
+.textContainer{
+    margin: 5% 1% 5% 5%;
+    display: inline-flex;
+    flex-direction: row;
+    
+}
+
+.description{
+ width: 32rem;
+ margin: 0% 10% 0% 0%;
+}
+
+
+.description > p > span{
+  color: #cd7d5b;
+}
+
+.video{
+  width: 500px; 
+  height: 250px;
+  margin-right: 5%;
+}
+
+.video > iframe {
+  width: 100%;
+  height: 100%
+}
+
+/* .trackContainer{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 1rem;
+    margin: 8rem 0rem 0rem 26.5rem;
+    width: 20rem;
+    animation: charging 5s infinite;
+} */
+
+@keyframes charging {
+0%{
+    background: linear-gradient(90deg, #5babcd 50%, #f4eeee 50%);
+  }
+  75%{
+    background: linear-gradient(90deg, #5babcd 60%, #f4eeee 40%);
+  }
+  100%{
+    background: linear-gradient(90deg, #5babcd 80%, #f4eeee 20%);
+  }
+}
+
+
+.loader {
+    font-size: 20px;
+    margin: 6rem 0rem 0rem 36rem;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    -webkit-animation: load4 1.3s infinite linear;
+    animation: load4 1.3s infinite linear;
+  }
+
+
+  @-webkit-keyframes load4 {
+    0%,
+    100% {
+      box-shadow: 0em -3em 0em 0.2em #5babcd, 2em -2em 0 0em #5babcd, 3em 0em 0 -0.5em #5babcd, 2em 2em 0 -0.5em #5babcd, 0em 3em 0 -0.5em #5babcd, -2em 2em 0 -0.5em #5babcd, -3em 0em 0 -0.5em #5babcd, -2em -2em 0 0em #5babcd;
+    }
+    12.5% {
+      box-shadow: 0em -3em 0em 0em #5babcd, 2em -2em 0 0.2em #5babcd, 3em 0em 0 0em #5babcd, 2em 2em 0 -0.5em #5babcd, 0em 3em 0 -0.5em #5babcd, -2em 2em 0 -0.5em #5babcd, -3em 0em 0 -0.5em #5babcd, -2em -2em 0 -0.5em #5babcd;
+    }
+    25% {
+      box-shadow: 0em -3em 0em -0.5em #5babcd, 2em -2em 0 0em #5babcd, 3em 0em 0 0.2em #5babcd, 2em 2em 0 0em #5babcd, 0em 3em 0 -0.5em #5babcd, -2em 2em 0 -0.5em #5babcd, -3em 0em 0 -0.5em #5babcd, -2em -2em 0 -0.5em #5babcd;
+    }
+    37.5% {
+      box-shadow: 0em -3em 0em -0.5em #5babcd, 2em -2em 0 -0.5em #5babcd, 3em 0em 0 0em #5babcd, 2em 2em 0 0.2em #5babcd, 0em 3em 0 0em #5babcd, -2em 2em 0 -0.5em #5babcd, -3em 0em 0 -0.5em #5babcd, -2em -2em 0 -0.5em #5babcd;
+    }
+    50% {
+      box-shadow: 0em -3em 0em -0.5em #5babcd, 2em -2em 0 -0.5em #5babcd, 3em 0em 0 -0.5em #5babcd, 2em 2em 0 0em #5babcd, 0em 3em 0 0.2em #5babcd, -2em 2em 0 0em #5babcd, -3em 0em 0 -0.5em #5babcd, -2em -2em 0 -0.5em #5babcd;
+    }
+    62.5% {
+      box-shadow: 0em -3em 0em -0.5em #5babcd, 2em -2em 0 -0.5em #5babcd, 3em 0em 0 -0.5em #5babcd, 2em 2em 0 -0.5em #5babcd, 0em 3em 0 0em #5babcd, -2em 2em 0 0.2em #5babcd, -3em 0em 0 0em #5babcd, -2em -2em 0 -0.5em #5babcd;
+    }
+    75% {
+      box-shadow: 0em -3em 0em -0.5em #5babcd, 2em -2em 0 -0.5em #5babcd, 3em 0em 0 -0.5em #5babcd, 2em 2em 0 -0.5em #5babcd, 0em 3em 0 -0.5em #5babcd, -2em 2em 0 0em #5babcd, -3em 0em 0 0.2em #5babcd, -2em -2em 0 0em #5babcd;
+    }
+    87.5% {
+      box-shadow: 0em -3em 0em 0em #5babcd, 2em -2em 0 -0.5em #5babcd, 3em 0em 0 -0.5em #5babcd, 2em 2em 0 -0.5em #5babcd, 0em 3em 0 -0.5em #5babcd, -2em 2em 0 0em #5babcd, -3em 0em 0 0em #5babcd, -2em -2em 0 0.2em #5babcd;
+    }
+  }
+  @keyframes load4 {
+    0%,
+    100% {
+      box-shadow: 0em -3em 0em 0.2em #5babcd, 2em -2em 0 0em #5babcd, 3em 0em 0 -0.5em #5babcd, 2em 2em 0 -0.5em #5babcd, 0em 3em 0 -0.5em #5babcd, -2em 2em 0 -0.5em #5babcd, -3em 0em 0 -0.5em #5babcd, -2em -2em 0 0em #5babcd;
+    }
+    12.5% {
+      box-shadow: 0em -3em 0em 0em #5babcd, 2em -2em 0 0.2em #5babcd, 3em 0em 0 0em #5babcd, 2em 2em 0 -0.5em #5babcd, 0em 3em 0 -0.5em #5babcd, -2em 2em 0 -0.5em #5babcd, -3em 0em 0 -0.5em #5babcd, -2em -2em 0 -0.5em #5babcd;
+    }
+    25% {
+      box-shadow: 0em -3em 0em -0.5em #5babcd, 2em -2em 0 0em #5babcd, 3em 0em 0 0.2em #5babcd, 2em 2em 0 0em #5babcd, 0em 3em 0 -0.5em #5babcd, -2em 2em 0 -0.5em #5babcd, -3em 0em 0 -0.5em #5babcd, -2em -2em 0 -0.5em #5babcd;
+    }
+    37.5% {
+      box-shadow: 0em -3em 0em -0.5em #5babcd, 2em -2em 0 -0.5em #5babcd, 3em 0em 0 0em #5babcd, 2em 2em 0 0.2em #5babcd, 0em 3em 0 0em #5babcd, -2em 2em 0 -0.5em #5babcd, -3em 0em 0 -0.5em #5babcd, -2em -2em 0 -0.5em #5babcd;
+    }
+    50% {
+      box-shadow: 0em -3em 0em -0.5em #5babcd, 2em -2em 0 -0.5em #5babcd, 3em 0em 0 -0.5em #5babcd, 2em 2em 0 0em #5babcd, 0em 3em 0 0.2em #5babcd, -2em 2em 0 0em #5babcd, -3em 0em 0 -0.5em #5babcd, -2em -2em 0 -0.5em #5babcd;
+    }
+    62.5% {
+      box-shadow: 0em -3em 0em -0.5em #5babcd, 2em -2em 0 -0.5em #5babcd, 3em 0em 0 -0.5em #5babcd, 2em 2em 0 -0.5em #5babcd, 0em 3em 0 0em #5babcd, -2em 2em 0 0.2em #5babcd, -3em 0em 0 0em #5babcd, -2em -2em 0 -0.5em #5babcd;
+    }
+    75% {
+      box-shadow: 0em -3em 0em -0.5em #5babcd, 2em -2em 0 -0.5em #5babcd, 3em 0em 0 -0.5em #5babcd, 2em 2em 0 -0.5em #5babcd, 0em 3em 0 -0.5em #5babcd, -2em 2em 0 0em #5babcd, -3em 0em 0 0.2em #5babcd, -2em -2em 0 0em #5babcd;
+    }
+    87.5% {
+      box-shadow: 0em -3em 0em 0em #5babcd, 2em -2em 0 -0.5em #5babcd, 3em 0em 0 -0.5em #5babcd, 2em 2em 0 -0.5em #5babcd, 0em 3em 0 -0.5em #5babcd, -2em 2em 0 0em #5babcd, -3em 0em 0 0em #5babcd, -2em -2em 0 0.2em #5babcd;
+    }
+  }
+
+
+  
+/* FOOTER */
+
+#footer{
+    
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 0rem 0rem 2rem;
+  bottom: 0rem;
+  color: black;
+height: 12rem;
+  overflow: hidden;
+position: relative;
+  width: 100%;
+}
+
+
+#textTools{
+ float: left;
+ position: absolute;
+ margin: 1rem 0rem 0rem 13rem;
+}
+
+#htmlFooter{
+  float: left;
+  height: 6rem;
+  margin: 4rem 0rem 0rem 10rem;
+  
+}
+
+#cssFooter{
+  float: left;
+  height: 6rem;
+  margin: 4rem 0rem 0rem 3rem;
+
+}
+
+.contactFooter{
+  float: right;
+  height: 10rem;
+  margin: 2rem 0rem 0rem 8rem;
+  width: 26rem;
+}
+
+.contactFooter > h4{
+  float: right;
+  margin: 0rem 13rem 0rem 0rem;
+}
+
+#textContact{
+  float: right;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  margin: 1rem 6rem 0rem 0rem;
+  
+
+}
+
+#gifDev{
+  height: 12rem;
+  float: left;
+  margin: 0rem 0rem 0rem 12rem;
+
+}

@@ -1,0 +1,293 @@
+@media only screen and (min-width: 1539px) {
+
+
+  #navbar{
+    margin-bottom: 10rem;
+  }
+
+  #title{
+    margin-left: 39rem;
+  }
+
+  #navList{
+    margin-right: 37rem;
+  }
+
+  .generalContainer{
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .cvButton{
+    margin-left: 23rem;
+  }
+
+  .body{
+    width: 55%;
+    
+    margin: 0 auto;
+  }
+
+  .titleP{
+    margin-left: 15%;
+  }
+
+  .textContainer{
+    margin-left: 15%;
+  }
+
+  .contactFooter{
+    margin-top: 4%;
+    margin-right: 20%;
+  }
+
+  #gifDev{
+
+
+    margin-top: 2%;
+    margin-left: 10%;
+  }
+
+  #textTools{
+
+    margin-top: 3%;
+    margin-left: 25%;
+  }
+
+  #cssFooter{
+    margin-top: 5%;
+  }
+
+  #htmlFooter{
+    margin-top: 5%;
+    margin-left: 23%;
+  }
+}
+
+
+
+
+@media (max-width: 415px){
+
+    #title{
+        margin: 8% 0% 0% 10%;
+        font-size: 9px;
+    }
+
+    .logo> h2{
+
+        font-size: 15px;
+        margin-right: 20%;
+    }
+
+    html, body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+
+   /* MENU HAMBURGUESA */
+
+    /* Hago que el navbar esté fuera de la pantalla */
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        margin-left: -100%;
+        transition: all 0.2s linear;
+        z-index: 100;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      
+      .nav.show {
+        margin-left: 0;
+      }
+
+
+      /* Estilos de enlaces, y menú ocupando toda la pantalla */
+
+      #navList {
+        background-color: rgb(250, 250, 250);
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      
+      .link-item {
+        margin-top: 2rem;
+        color: #444444;
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+      }
+
+      /* Botón del menú */
+
+      .button-menu {
+        z-index: 200;
+        width: 40px;
+        height: 40px;
+        border: none;
+        display: flex;
+        background: none;
+        flex-direction: column; /* Pondrá un span debajo del otro*/
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      
+      /* 
+        Dibujamos una línea recta por cada span creando el tipico menu hamburguesa
+      */
+      
+      .button-menu{
+        float: left;
+        margin-top: 3rem;
+        margin-left: 5rem;
+      }
+
+      .button-menu span {
+        background: #444444;
+        border-radius: 3px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        transform-origin: 4px 0px;
+        transition: all 0.2s linear;
+        width: 37px;
+      }
+      
+      /* 
+        con los span dibujamos un icono de cerrar 
+        para mostrar cuándo la navegación este abierta 
+      */
+      
+      .button-menu.close span {
+        opacity: 1;
+        transform: rotate(45deg) translate(0px, 0px);
+        background: #ffffff;
+      }
+      
+      .button-menu.close span:nth-child(2) {
+        transform: rotate(-45deg) translate(-8px, 5px);
+      }
+      
+      .button-menu.close span:nth-child(3) {
+        display: none;
+      }
+
+
+      .body{
+        float: left;
+        height: 100%;
+        margin: 20% 0% 0% 8%;
+        width: 75%;
+      }
+
+      .h1Container{
+        float: right;
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      .textContainer{
+        float: right;
+        font-size: 12px;
+        margin: 8% -28% 0% 10%;
+      }
+
+      .loader{
+        float: right;
+        margin: 60% -55% 0% 0%;
+      }
+
+      .trackContainer{
+        float: right;
+        margin: 80% 10% 30% 0%;
+        width: 80%;
+      }
+  
+/* FINAL HAMBURGUESA */
+
+    .body{
+display: flex;
+      flex-direction: column;
+      width: 85%;
+    }
+
+    .h1Container{
+      font-size: 11px;
+      text-align: center;
+      margin: 0% 0% 0% -3%;
+    }
+
+    .Container{
+      margin-top: 15%;
+    }
+
+    .titleP{
+      padding: 5%;
+    }
+
+    .textContainer{
+      display: flex;
+      flex-direction: column; 
+      text-align: center;
+    }
+
+    .description{
+      width: 70%;
+      text-align: justify;
+     }
+
+     .video{
+      float: left;
+      margin: 8% 0% 5% 0%;
+      width:300px;
+      height: 200px;
+   
+    }
+
+    
+/* FOOTER */
+
+#footer{
+  display: flex;
+  align-items: column;
+  width: 150%;
+  height: 42rem;
+}
+
+#textTools{
+  margin: 70% 0% 0% 22%;
+}
+
+#htmlFooter{
+  margin-left: 14%;
+  margin-top: 50%
+}
+
+#cssFooter{
+  margin-left: 6rem;
+  margin-top: 50%;
+}
+
+#gifDev{
+  margin: 80% 0% 0% -60%;
+}
+
+
+.contactFooter{
+  margin: 20% -10% 0% 0%;
+  text-align:center;
+}
+
+#textContact{
+  margin-right: 8rem;
+}
+}

@@ -1,0 +1,797 @@
+@media only screen and (min-width: 1539px) {
+  #title {
+    margin: 1rem 0rem 0rem 40rem;
+  }
+
+  #navList {
+    margin-right: 40rem;
+  }
+
+  #body {
+    margin-left: 25%;
+    width: 36%;
+  }
+
+  .lateralContainer {
+    margin: 0rem 0rem 0rem 98rem;
+  }
+
+  #lateral,
+  #lateral2 {
+    width: 30%;
+  }
+
+  #lateral2 > img {
+    margin-left: 15%;
+  }
+
+  #lateral2 > p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #lateral2 > h5 {
+    margin-left: 35%;
+  }
+
+  #footer {
+    margin: 2rem 0rem 0rem 33rem;
+  }
+}
+
+@media (max-width: 1535px) {
+  #navbar {
+    height: 80px;
+  }
+
+  .generalContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0rem 0rem 0rem 0rem;
+    width: 100%;
+  }
+
+  #body {
+    height: 58rem;
+    width: 55rem;
+  }
+
+  .cards {
+    height: 20rem;
+    margin: 2rem 32rem 0rem 10rem;
+    padding: 10px;
+  }
+
+  .textCards {
+    font-size: 15px;
+
+    margin-left: 9rem;
+    margin-top: 10px;
+  }
+
+  .photoCards {
+    height: 13rem;
+    width: 16rem;
+  }
+
+  #philoImg > p {
+    text-align: center;
+    padding: 40px;
+  }
+
+  #lateral {
+    margin-right: 19rem;
+  }
+
+  #lateral2 {
+    margin-right: -29.4rem;
+    height: 36.9rem;
+  }
+
+  .fotoHome {
+    width: 13rem;
+  }
+
+  #navbar {
+    height: 60px;
+    width: 102%;
+  }
+
+  .lateralContainer {
+    display: flex;
+    margin: 0rem 0rem 0rem 68rem;
+    float: right;
+    flex-direction: column;
+  }
+
+  #linkedin {
+    font-size: 4.3rem;
+    height: 5rem;
+    width: 4rem;
+  }
+
+  #git {
+    height: 4.1rem;
+    width: 4rem;
+  }
+
+  #gmail {
+    height: 4.1rem;
+    width: 4rem;
+  }
+
+  .social {
+    float: left;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    padding: 16px;
+  }
+
+  #lateral .overlay {
+    display: block;
+    height: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 8rem;
+    margin-top: 2.5rem;
+    position: absolute;
+    opacity: 0;
+    padding: 5px;
+    text-shadow: 0px 0px 1px #ccc;
+    transform: translateX(-80%);
+    transition: all 400ms;
+  }
+
+  #lateral2 {
+    height: 35rem;
+  }
+
+  #lateral2 > p {
+    font-size: 13px;
+    margin: 0vh 5vh 0vh 5vh;
+  }
+
+  #footer {
+    margin: 2rem 0rem 0rem 0rem;
+    bottom: 0rem;
+    color: black;
+    height: 12rem;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  #gifDev {
+    height: 9rem;
+    margin: 2rem 0rem 0rem 12rem;
+  }
+
+  #textTools {
+    float: left;
+    position: absolute;
+    margin: 2rem 0rem 0rem 13rem;
+  }
+
+  #htmlFooter {
+    margin: 5rem 0rem 0rem 10rem;
+  }
+
+  #cssFooter {
+    margin: 5rem 0rem 0rem 3rem;
+  }
+
+  .contactFooter {
+    float: right;
+    height: 10rem;
+    margin: 3rem 0rem 0rem 13rem;
+    width: 26rem;
+  }
+}
+
+@media (max-width: 1520px) {
+  #lateral2 > p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1433px) {
+  #body {
+    height: 60rem;
+  }
+
+  .cards {
+    height: 20rem;
+    margin: 2rem 32rem 0rem 10rem;
+    padding: 10px;
+  }
+
+  .textCards {
+    font-size: 15px;
+
+    margin-left: 9rem;
+    margin-top: 10px;
+  }
+
+  .photoCards {
+    height: 13rem;
+    width: 16rem;
+  }
+
+  #philoImg > p {
+    text-align: center;
+    padding: 40px;
+  }
+
+  #lateral {
+    margin-right: 19rem;
+  }
+
+  #lateral2 {
+    margin-right: -29.4rem;
+    height: 36.9rem;
+  }
+
+  .fotoHome {
+    width: 13rem;
+  }
+
+  #navbar {
+    height: 60px;
+    width: 102%;
+  }
+
+  .lateralContainer {
+    display: flex;
+    margin: -3rem 0rem 0rem 68rem;
+    float: right;
+    flex-direction: column;
+  }
+
+  #linkedin {
+    font-size: 4.3rem;
+    height: 5rem;
+    width: 4rem;
+  }
+
+  #git {
+    height: 4.1rem;
+    width: 4rem;
+  }
+
+  #gmail {
+    height: 4.1rem;
+    width: 4rem;
+  }
+
+  .social {
+    float: left;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    padding: 16px;
+  }
+
+  #lateral .overlay {
+    display: block;
+    height: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 8rem;
+    margin-top: 2.5rem;
+    position: absolute;
+    opacity: 0;
+    padding: 5px;
+    text-shadow: 0px 0px 1px #ccc;
+    transform: translateX(-80%);
+    transition: all 400ms;
+  }
+
+  #lateral2 > p {
+    font-size: 13px;
+    margin: 0vh 5vh 0vh 5vh;
+  }
+
+  #footer {
+    margin: 50rem 0rem 0rem 0rem;
+    bottom: 0rem;
+    color: black;
+    height: 12rem;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  #gifDev {
+    height: 9rem;
+    margin: 2rem 0rem 0rem 12rem;
+  }
+
+  #textTools {
+    float: left;
+    position: absolute;
+    margin: 2rem 0rem 0rem 13rem;
+  }
+
+  #htmlFooter {
+    margin: 5rem 0rem 0rem 10rem;
+  }
+
+  #cssFooter {
+    margin: 5rem 0rem 0rem 3rem;
+  }
+
+  .contactFooter {
+    float: right;
+    height: 10rem;
+    margin: 2rem 5rem 0rem 0rem;
+    width: 26rem;
+  }
+}
+
+@media (max-width: 1432px) {
+  #navList {
+    margin-right: 8rem;
+  }
+
+  .generalContainer {
+    float: left;
+    margin-left: -1rem;
+  }
+
+  #body {
+    height: 58rem;
+  }
+
+  .cards {
+    height: 20rem;
+    margin: 2rem 32rem 0rem 10rem;
+    padding: 10px;
+  }
+
+  .textCards {
+    font-size: 15px;
+
+    margin-left: 9rem;
+    margin-top: 10px;
+  }
+
+  .photoCards {
+    height: 13rem;
+    width: 16rem;
+  }
+
+  #philoImg > p {
+    text-align: center;
+    padding: 40px;
+  }
+
+  #lateral {
+    margin: 8rem 19rem 0rem 0rem;
+  }
+
+  #lateral2 {
+    margin-right: -29.4rem;
+    height: 35rem;
+  }
+
+  .fotoHome {
+    width: 13rem;
+  }
+
+  #navbar {
+    height: 60px;
+    width: 102%;
+  }
+
+  .lateralContainer {
+    display: flex;
+    margin: -3rem 0rem 0rem 68rem;
+    float: right;
+    flex-direction: column;
+  }
+
+  #linkedin {
+    font-size: 4.3rem;
+    height: 5rem;
+    width: 4rem;
+  }
+
+  #git {
+    height: 4.1rem;
+    width: 4rem;
+  }
+
+  #gmail {
+    height: 4.1rem;
+    width: 4rem;
+  }
+
+  .social {
+    float: left;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    padding: 16px;
+  }
+
+  #lateral .overlay {
+    display: block;
+    height: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 8rem;
+    margin-top: 2.5rem;
+    position: absolute;
+    opacity: 0;
+    padding: 5px;
+    text-shadow: 0px 0px 1px #ccc;
+    transform: translateX(-80%);
+    transition: all 400ms;
+  }
+
+  #lateral2 > p {
+    font-size: 13px;
+    margin: 0vh 5vh 0vh 5vh;
+  }
+
+  #footer {
+    margin: 2rem 0rem 0rem 0rem;
+    bottom: 0rem;
+    color: black;
+    height: 12rem;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  #gifDev {
+    height: 9rem;
+    margin: 2rem 0rem 0rem 12rem;
+  }
+
+  #textTools {
+    float: left;
+    position: absolute;
+    margin: 2rem 0rem 0rem 13rem;
+  }
+
+  #htmlFooter {
+    margin: 5rem 0rem 0rem 10rem;
+  }
+
+  #cssFooter {
+    margin: 5rem 0rem 0rem 3rem;
+  }
+
+  .contactFooter {
+    float: right;
+    height: 10rem;
+    margin: 3rem 0rem 0rem 12rem;
+    width: 26rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .generalContainer {
+    margin-left: -3rem;
+  }
+
+  .contactFooter {
+    margin-right: 4rem;
+  }
+}
+
+@media (max-width: 1339px) {
+  .generalContainer {
+    margin-left: -7rem;
+  }
+
+  #footer {
+    margin-left: -7rem;
+  }
+
+  .contactFooter {
+    margin-right: -6rem;
+  }
+
+  #textContact {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 1235px) {
+  #navbar {
+    margin: 1rem 0rem 0rem 15rem;
+  }
+
+  #title {
+    margin-left: 5rem;
+  }
+}
+
+@media (max-width: 415px) {
+  #title {
+    margin: 0% 0% 0% -50%;
+    font-size: 9px;
+  }
+
+  .logo > h2 {
+    font-size: 15px;
+    margin-right: 20%;
+  }
+
+  html,
+  body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  /* MENU HAMBURGUESA */
+
+  /* Hago que el navbar esté fuera de la pantalla */
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.2s linear;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .nav.show {
+    margin-left: 0;
+  }
+
+  /* Estilos de enlaces, y menú ocupando toda la pantalla */
+
+  #navList {
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .link-item {
+    margin-top: 2rem;
+    color: #444444;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+  }
+
+  /* Botón del menú */
+
+  .button-menu {
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    background: none;
+    flex-direction: column; /* Pondrá un span debajo del otro*/
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  /* 
+        Dibujamos una línea recta por cada span creando el tipico menu hamburguesa
+      */
+
+  .button-menu {
+    margin-top: 3rem;
+    margin-left: 5rem;
+  }
+
+  .button-menu span {
+    background: #444444;
+    border-radius: 3px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    transform-origin: 4px 0px;
+    transition: all 0.2s linear;
+    width: 37px;
+  }
+
+  /* 
+        con los span dibujamos un icono de cerrar 
+        para mostrar cuándo la navegación este abierta 
+      */
+
+  .button-menu.close span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+    background: #ffffff;
+  }
+
+  .button-menu.close span:nth-child(2) {
+    transform: rotate(-45deg) translate(-8px, 5px);
+  }
+
+  .button-menu.close span:nth-child(3) {
+    display: none;
+  }
+
+  /* FINAL HAMBURGUESA */
+
+  .generalContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #body {
+    display: flex;
+    flex-direction: column;
+    background: rgb(244, 238, 238);
+    display: flex;
+    float: left;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 50%;
+    width: 85%;
+    height: 130rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+    padding: 10%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    margin: 20% 6% 0% 20%;
+  }
+
+  .textCards {
+    display: flex;
+    flex-direction: column;
+    margin-left: -3rem;
+    margin-top: -10%;
+    width: 85%;
+  }
+
+  #textCard2 {
+    margin: 170% 0% 0% -15%;
+  }
+
+  #textCard2 > h3 {
+    margin-left: 5%;
+    font-size: 18px;
+    letter-spacing: -0.6px;
+  }
+
+  .textCards > h3 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+    padding: 10px;
+  }
+
+  .textCards > p,
+  span {
+    font-size: 18px;
+  }
+
+  .photoCards {
+    margin: 400% 0% 0% -30%;
+  }
+
+  #philoImg {
+    margin: 590% 0% 0% -28%;
+  }
+
+  .lateralContainer {
+    display: flex;
+    margin: 88rem 0rem 0rem 20.3rem;
+    float: left;
+    flex-direction: column;
+  }
+
+  #lateral {
+    animation: blink 3s infinite linear;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    height: 23rem;
+    margin-left: -2.5rem;
+    margin-top: 50rem;
+    width: 95%;
+  }
+
+  @keyframes blink {
+    0% {
+      background: #f4eeee;
+    }
+
+    45% {
+      background: #b7b1b1;
+    }
+
+    75% {
+      background: #f4eeee;
+    }
+
+    100% {
+      background: #b7b1b1;
+    }
+  }
+
+  #lateral2 {
+    background: rgb(244, 238, 238);
+    flex-direction: column;
+    float: let;
+    margin-left: -2.5rem;
+    margin-top: 2rem;
+    width: 95%;
+    height: 42rem;
+  }
+
+  .fotoHome {
+    box-shadow: 0px 7px 8px 4px gray;
+    height: 10rem;
+    margin: 5% 1% 1% 15%;
+    width: 14rem;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  #lateral2 > h5 {
+    float: left;
+    font-size: 18px;
+    margin-left: 7rem;
+    padding: 10px;
+  }
+
+  #lateral2 > p {
+    float: left;
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  #footer {
+    display: flex;
+    align-items: column;
+    width: 150%;
+    height: 32rem;
+  }
+
+  #textTools {
+    margin-left: 40%;
+  }
+
+  #htmlFooter {
+    margin-left: 32%;
+  }
+
+  #cssFooter {
+    margin-left: 3rem;
+  }
+
+  #gifDev {
+    margin: 12rem 0rem 0rem -13rem;
+  }
+
+  .contactFooter {
+    margin: 22rem 0rem 0rem -17rem;
+    text-align: center;
+  }
+
+  #textContact {
+    margin-right: 8rem;
+  }
+}
