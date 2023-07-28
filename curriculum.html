@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <title>Isaac Ortega dev/></title>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="title">
+            <div class="name">
+                <h1><a href="index.html">Isaac Ortega</a></h1>
+                <h2 class="logo">
+                    <<span>Developer</span>>
+                </h2>
+            </div>
+
+        </div>
+        <button id="button-menu" class="button-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="menu" class="navMenu">
+            <ul class="navList">
+                <li><a class="link-item" href='curriculum.html'>Curriculum Vitae</a></li>
+                <li><a class="link-item" href='index.html'>Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="generalContainerCV" id="generalContainerCv">
+        <div class="cvContainer">
+            <img class="pdfCV" src="./img/isaac_ortega_cv(español).jpg" alt="cv">
+        </div>
+        <div class="buttonContainer">
+            <a href="./img/isaac_ortega_cv(español).jpg" download="Curriculum_vitae_Isaac">
+                <button class="cvButton">Descargar CV</button></a>
+            <img class="arrows" src="./img/flechasGif.gif" alt="arrows">
+        </div>
+
+    </div>
+    <footer class="footerContent">
+        <h3 class="footerTitle">¡Gracias por la visita!</h3>
+        <img class="gifDev" src="./img/gifDev.gif" alt="gif">
+        &copy; Isaac Ortega Acosta - All rights reserved
+    </footer>
+    </div>
+    <script>
+        //  seleccionamos los dos elementos que serán clickables
+
+        const toggleButton = document.getElementById("button-menu");
+        const navWrapper = document.getElementById("menu");
+
+        /* 
+          cada vez que se haga click en el botón 
+          agrega y quita las clases necesarias 
+          para que el menú se muestre.
+        */
+        toggleButton.addEventListener("click", () => {
+            toggleButton.classList.toggle("close");
+            navWrapper.classList.toggle("show");
+        });
+
+        /* 
+          Cuándo se haga click fuera del contenedor de enlaces 
+          el menú debe esconderse.
+        */
+
+        navWrapper.addEventListener("click", e => {
+            if (e.target.id === "menu") {
+                navWrapper.classList.remove("show");
+                toggleButton.classList.remove("close");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

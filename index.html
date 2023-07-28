@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <title>Isaac Ortega dev/></title>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="title">
+            <div class="name">
+                <h1><a href="index.html">Isaac Ortega</a></h1>
+                <h2 class="logo">
+                    <<span>Developer</span>>
+                </h2>
+            </div>
+
+        </div>
+        <button id="button-menu" class="button-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="menu" class="navMenu">
+            <ul class="navList">
+                <li><a class="link-item" href='curriculum.html'>Curriculum Vitae</a></li>
+                <li><a class="link-item" href='index.html'>Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="generalContainer">
+        <h2 class="langTitle">Lenguajes Conocidos:</h2>
+        <div class="mainContainer">
+            <section class="langContainer">
+                <img class="lang" src="./img/htmlLogo.png">
+                <img class="lang" src="./img/cssLogo.png">
+                <img class="lang" src="./img/reactLogo.webp">
+                <img class="lang" src="./img/jsLogo.png">
+                <img class="lang" src="./img/php.jpg">
+                <img class="lang" src="./img/sqlLogo.png">
+                <img class="lang" src="./img/nodeLogo.jpg">
+                <img class="lang" src="./img/mongodbLogo.png">
+                <img class="lang" src="./img/mongooseLogo.jpg">
+                <img class="lang" src="./img/sequelizeLogo.png">
+                <img class="lang" src="./img/jestLogo.jpg">
+                <img class="lang" src="./img/pugLogo.png">
+            </section>
+            <section class="projects">
+                <h2 class="projectsTitle">Proyectos:</h2>
+                <div class="card">
+                    <a class="linkImg" target="_blank"
+                        href="https://64c02028ad4acc14b2b0be98--lustrous-bienenstitch-76e8ed.netlify.app/"><img
+                            class="projectImg" src="./img/checkBooksShoot.png" alt="checkBooks"></a>
+                </div>
+                <div class="card">
+                    <a class="linkImg" target="_blank" href="https://someweather.netlify.app/"><img class="projectImg"
+                            src="./img/project.png" alt="image"></a>
+                </div>
+                <div class="card">
+                    <a class="linkImg" target="_blank" href="https://www.emancipatic.org/"><img class="projectImg"
+                            src="./img/emancipatic.png" alt="emancipatic"></a>
+                </div>
+            </section>
+            <article>
+                <div class="socialInvitation">
+                    <h2 class="socialTitle">Visita mi Github para más:</h2>
+                    <a target="_blank" href="https://github.com/IsaacOrtga"><img class="social" id="git"
+                            src="./img/gitSocial.png"></img></a>
+
+
+                    <h2 class="socialTitle">Así como mi LinkedIn</h2>
+                    <a target="_blank" href="https://www.linkedin.com/in/isaac-ortega-acosta/"><img class="social"
+                            id="linkedin" src="./img/linkedinLogo.png"></img></a>
+
+                </div>
+            </article>
+            <aside class="softSkillsContent">
+                <h2 class="skillsTitle">Soft Skils</h2>
+                <ul class="softSkills">
+                    <li>Trabajo en equipo</li>
+                    <li>Comunicación</li>
+                    <li>Gestión de problemas</li>
+                    <li>Paciencia</li>
+                    <li>Pasión por aprender</li>
+                    <li>Buena presencia</li>
+                    <li>Experiencia</li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+    <footer class="footerContent">
+        <h3 class="footerTitle">¡Gracias por la visita!</h3>
+        <img class="gifDev" src="./img/gifDev.gif" alt="gif">
+        &copy; Isaac Ortega Acosta - All rights reserved
+    </footer>
+
+    <script>
+        //  seleccionamos los dos elementos que serán clickables
+
+        const toggleButton = document.getElementById("button-menu");
+        const navWrapper = document.getElementById("menu");
+
+        /* 
+          cada vez que se haga click en el botón 
+          agrega y quita las clases necesarias 
+          para que el menú se muestre.
+        */
+        toggleButton.addEventListener("click", () => {
+            toggleButton.classList.toggle("close");
+            navWrapper.classList.toggle("show");
+        });
+
+        /* 
+          Cuándo se haga click fuera del contenedor de enlaces 
+          el menú debe esconderse.
+        */
+
+        navWrapper.addEventListener("click", e => {
+            if (e.target.id === "menu") {
+                navWrapper.classList.remove("show");
+                toggleButton.classList.remove("close");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
